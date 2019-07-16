@@ -1,0 +1,89 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EL BAGDADI ABDERRAHIM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="./soumission.js"></script>
+    <style type="text/css">
+    	.head_form{
+    		text-align: center;
+    		margin-bottom: 20px;
+    	}
+    	.head_form input{
+    		width: 246px;
+   			text-align: center;
+    	}
+    	.control_btns{
+    		text-align: center;
+    		margin-bottom: 20px;
+    	}
+    	.control_btns button{
+    		width: 190px;
+    	}
+    	#_result{
+    		text-align: center;
+		    display: block;
+		    font-weight: bold;
+		    margin-top: 40px;
+    	}
+    	.card-footer{
+            display: none;
+    	}
+    </style>
+</head>
+<body>
+	<section style="margin-top: 50px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <h5 class="card-header">CALCULATEUR DES FRAIS</h5>
+                        <div class="card-body">
+                        	<div class="row">
+                        		<div class="col-12">
+                        				<div class="head_form">
+											<input type="number" name="" id="value"  placeholder="Une Soumission ou un Total">
+										</div>
+										<div  class="control_btns">
+											<button  class="btn btn-primary" onclick="calculateTotal()">Calculer total</button>
+										    <button  class="btn btn-secondary" onclick="calculateSoumission()">Calculer la soumission</button>
+										</div>
+                        		</div>
+                        	</div>
+                        	<div class="row">
+                        		<div class="col">
+                        			<span id="_result"></span>
+                        		</div>
+                        		<div class="col">
+                        			<div class="my_form" >
+										
+										<div class="body_form">
+											<ul class="fees">
+										  		<li> <label>Frais de base: <span id="frais_base"></span></label></li>
+										  		<li> <label>Frais special: <span id="frais_special"></span></label></li>
+										  		<li> <label>Frais d'association: <span id="frais_association"></span></label></li>
+										  		<li> <label>Frais d'entreposage: <span id="frais_entreposage"></span></label></li>
+										
+										  	</ul>
+										</div>
+                        		</div>
+                        	</div>
+                        	
+								    	
+							</div>
+                        </div>
+                         <div class="card-footer text-muted">
+                         	<label>Obtenir les détails dans un email</label>
+						   <input type="email"  class="form-control" name="email_field" placeholder="Votre adresse email">
+                           <hr>
+						   <button onclick="send()" class="btn btn-primary">Envoyer</button>
+						 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+</body>
+</html>
